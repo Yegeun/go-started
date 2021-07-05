@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/Yegeun/go-started/models"
+)
 
 func main() {
-	fmt.Println("hello")
+	u := models.User{
+		ID:        2
+		FirstName: "Alex",
+		LastName:  "Hopkin",
+	}
+	fmt.Println(u)
 }
